@@ -1,0 +1,200 @@
+  @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,100&family=Fraunces&family=Hanken+Grotesk&family=Josefin+Sans:ital,wght@1,300;1,400;1,600&family=Kumbh+Sans:wght@300&family=League+Spartan&family=Manrope:wght@500;600;700&family=Montserrat:ital,wght@0,300;0,400;0,900;1,800&family=Outfit&family=Poppins:ital,wght@0,300;0,400;1,200&family=Red+Hat+Display:ital@1&display=swap');
+
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'specimen Manrope', sans-serif;
+  }
+
+  /* Root Fonts & Background Colors */
+
+  :root {
+      --Very-Dark-Grayish-Blue: hsl(217, 19%, 35%);
+      --Desaturated-Dark-Blue: hsl(214, 17%, 51%);
+      --Grayish-Blue: hsl(212, 23%, 69%);
+      --Light-Grayish-Blue: hsl(210, 46%, 95%);
+
+      --font-family-default: 'Manrope', sans-serif;
+      --fw-medium: 500;
+      --fw-bold: 700;
+  }
+
+  html {
+      background-color: var(--Light-Grayish-Blue);
+  }
+
+  /* Start Article Wapper  */
+
+  .wapper {
+      display: grid;
+      grid-template-columns: repeat(2, 490px);
+      justify-content: center;
+      align-items: center;
+      margin: 10% auto;
+      width: 986px;
+      background-color: white;
+      border-radius: 8px;
+  }
+
+  .article-banner {
+      width: 433px;
+      border-bottom-left-radius: 8px;
+      border-top-left-radius: 8px;
+  }
+
+  /* Start Article Title */
+
+  .article-container {
+      margin: 0 40px 0 0px;
+      background-color: white;
+  }
+
+  .article-title h1 {
+      font-size: 25px;
+      font-weight: 500;
+      letter-spacing: 1px;
+      padding: 10px 0 10px 0;
+      color: var(--Very-Dark-Grayish-Blue);
+  }
+
+  .article-title p {
+      font-size: 15px;
+      padding: 0 20px 10px 0;
+      line-height: 24px;
+      color: var(--Grayish-Blue);
+  }
+
+  .article-footer {
+      display: flex;
+      align-items: center;
+  }
+
+  .article-footer img {
+      width: 50px;
+      border-radius: 60px;
+      margin-right: 20px;
+  }
+
+  .article-footer {
+      margin-top: 10px;
+  }
+
+  .article-author {
+      color: var(--Very-Dark-Grayish-Blue);
+  }
+
+  .article-date {
+      padding-top: 8px;
+      color: var(--Grayish-Blue);
+  }
+
+  .share-btn {
+      margin-left: auto;
+      background-color: var(--Grayish-Blue);
+      border-radius: 100%;
+      padding: 0.5rem;
+      border: none;
+      z-index: 1;
+  }
+
+
+
+  /* Footer Icons */
+
+  .share-menu {
+      position: absolute;
+      background-color: var(--Very-Dark-Grayish-Blue);
+      display: flex;
+      align-items: center;
+      margin-left: 202px;
+      gap: 18px;
+      border-radius: 9px;
+      bottom: 267px;
+      width: 18%;
+      height: 50px;
+      cursor: pointer;
+  }
+
+  .share-label {
+      letter-spacing: 3px;
+      color: var(--Grayish-Blue);
+      margin-left: 32px;
+  }
+
+  .hidden {
+      display: none;
+  }
+
+
+  .checked {
+      background-color: var(--Very-Dark-Grayish-Blue);
+  }
+
+
+  /* User */
+
+  .attribution {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 30px;
+  }
+
+  @media(max-width: 1186px) {
+      .wapper {
+          display: inline;
+          justify-content: center;
+          margin-top: 20px;
+      }
+
+      .article-banner {
+          width: 276px;
+          border-top-right-radius: 8px;
+          border-top-left-radius: 8px;
+          border-bottom-left-radius: 1px;
+          margin-top: 30px;
+      }
+
+      .article-title {
+          margin-left: 30px;
+      }
+
+      .article-title h1 {
+          font-size: 16px;
+      }
+
+      .article-title p {
+          font-size: 12px;
+      }
+
+      .share-menu {
+          margin-left: 58px;
+          gap: 18px;
+          border-radius: 9px;
+          bottom: 100px;
+          width: 70%;
+          height: 44px;
+      }
+
+      .article-footer img {
+          width: 44px;
+          border-radius: 60px;
+          margin-right: 20px;
+      }
+
+      .article-author {
+          font-size: 12px;
+      }
+
+      .attribution {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-bottom: 30px;
+          margin-top: 30px;
+          font-size: 11px;
+      }
+
+
+  }
