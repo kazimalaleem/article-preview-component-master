@@ -142,14 +142,27 @@
   }
 
   @media(max-width: 1186px) {
+
+
+      html {
+          background-color: var(--Light-Grayish-Blue);
+          margin-left: 10px;
+      }
+
       .wapper {
           display: inline;
           justify-content: center;
-          margin-top: 20px;
+          margin-top: 22px;
+      }
+
+      .article-container {
+          margin: 0 12px 0 0px;
+          background-color: white;
+          padding: 0 16px 0 0px;
       }
 
       .article-banner {
-          width: 276px;
+          width: 295px;
           border-top-right-radius: 8px;
           border-top-left-radius: 8px;
           border-bottom-left-radius: 1px;
