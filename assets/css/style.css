@@ -156,13 +156,13 @@
       }
 
       .article-container {
-          margin: 0 12px 0 0px;
-          background-color: white;
-          padding: 0 16px 0 0px;
+        margin: 0 0px 0 0px;
+        background-color: white;
+        padding: 0 16px 0 0px
       }
 
       .article-banner {
-          width: 295px;
+          width: 100%;
           border-top-right-radius: 8px;
           border-top-left-radius: 8px;
           border-bottom-left-radius: 1px;
